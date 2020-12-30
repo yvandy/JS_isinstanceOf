@@ -1,19 +1,14 @@
 let name1 = {
     firstname : "vandana",
-    lastname : "sharma",
-    
+    lastname : "sharma",    
 }
-
 let name2 = {
     firstname : "sachin",
     lastname :"tendlkar",
 }
-
 let printFullName=function(hometown,state){
-
         console.log(this.firstname+ " "+this.lastname + "from " + hometown + "," + state);
     }
-
 // function borrowing in CALL()
 printFullName.call(name1,"shimal","himachal");
 printFullName.apply(name2,["pune","maharashtra"]);
