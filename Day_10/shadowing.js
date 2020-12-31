@@ -9,4 +9,7 @@ var a = 100;
 
 }
 // this 'a'  will point to the same which is inside the block scope, this is the case only with var keyword.
+// in this case there will be two scopes:
+//1. block : [b:20 , c:30]
+//2. global : [a:10]
 console.log(a);
