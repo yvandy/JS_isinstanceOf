@@ -17,7 +17,8 @@ class Complex{
     static product(c,d){return c.times(d);}
 
     get real(){ return this.r;}
-    get imaginary(){ return Math.hypot(this.r, this.i);}
+    get imaginary(){ return this.i;}
+    get magnitude(){ return Math.hypot(this.r,this.i);}
 
     toString(){ return `{${this.r}, ${this.i}}`;}
 
@@ -28,10 +29,9 @@ class Complex{
 obj1 = new Complex(8,7);
 obj2 = new Complex(7,8);
 obj3 = obj1.plus(obj2);
-
 console.log(obj3);
 console.log(obj1.plus(obj2).toString());
-
+console.log(Complex.real(3,2));
 // Complex.ZERO = new Complex(0,0);
 // Complex.ONE = new Complex(1,0);
 // Complex.I = new Complex(0,1);
