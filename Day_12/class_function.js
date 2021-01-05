@@ -4,18 +4,26 @@ function range(from,to){
     r.to = to;
     return r;
 }
-
 range.methods = {
+
     includes(x) { return this.from <= x && x<= this.to},
+
     *[Symbol.iterator](){
         for(let x = Math.ceil(this.from); x<=this.to; x++)
          yield x;         
     },
+
     toString(){
-        return "(" + this.from + "..." + this.to +")";}
+        return "(" + this.from + "..." + this.to +")";
     }
+}
 
     let r = range(1,4);
     r.includes(3);
     r.toString();
     [...r];
+
+
+
+
+
