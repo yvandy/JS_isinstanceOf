@@ -26,3 +26,6 @@ class RangeSet extends AbstractSet{
 
 NotSet1 = new NotSet(90);
 console.log(NotSet.has);
+
+// abs = new AbstractSet;
+// console.log(abs.has(9));
