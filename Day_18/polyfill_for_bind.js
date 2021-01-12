@@ -19,3 +19,15 @@ Function.prototype.myBind = function(...args){
 
 let printMyName2 = printName.myBind(name,"himachal pradesh");
 printMyName2("India");
+
+// -------------------------------------------------------------------------------//
+
+let address = { city: "bangalore",
+                country : "india"
+}
+
+function printAddress(){
+    console.log(this.city +" "+ this.country);
+}
+let printMyAddress = printAddress.bind(address);
+printMyAddress();
