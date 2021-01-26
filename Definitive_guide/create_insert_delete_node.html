@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let paragraph = document.createElement("p"); 
+        let emphasis = document.createElement("em");
+        emphasis.append("World"); 
+        paragraph.append("Hello ", emphasis, "!");
+        paragraph.prepend("¡"); 
+        console.log(paragraph.innerHTML);
+        document.body.append(paragraph)
+    </script>
+</body>
+</html>
